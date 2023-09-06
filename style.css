@@ -1,0 +1,159 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: 19.875em 19.875em;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    grid-column: span 2;
+    background-color: rgb(255, 255, 255);
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.875em;
+    border-radius: 10px 10px 0 0;
+}
+
+.top h1 {
+    font-size: x-large;
+    margin-bottom: .875em;
+    color: hsl(179, 62%, 43%);
+}
+
+.top h3 {
+    font-size: large;
+    margin-bottom: .7em;
+    color: hsl(71, 73%, 54%);
+}
+
+.top p {
+    font-size: medium;
+    color: hsl(218, 22%, 67%);
+
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.875em;
+    border-radius: 0 0 0 10px;
+}
+
+.left h3 {
+    color: white;
+    margin-bottom: .7em;
+    font-size: large;
+}
+
+.left P:first-of-type {
+    font-size: xx-large;
+    color: white;
+    margin: .3em 0;
+    display: flex;
+    align-items: center;
+}
+
+.left P:first-of-type span {
+    color: hsla(203, 44%, 93%, 0.514);
+    font-size: small;
+    padding: 10px;
+}
+
+.left p:nth-of-type(2) {
+    color: hsla(203, 44%, 93%, 0.768);
+    margin-bottom: 1.9em;
+}
+
+.left button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    width: 93%;
+    padding: .75em 0;
+    border-radius: 4px;
+
+}
+
+.right {
+    background-color: hsla(179, 62%, 43%, 0.832);
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.875em;
+    border-radius: 0 0 10px 0;
+}
+
+.right h3 {
+    margin-bottom: .7em;
+    color: white;
+}
+
+.right p {
+    line-height: 1.3;
+    color: hsla(203, 44%, 93%, 0.768);
+}
+
+@media (max-width: 660px) {
+    .wrapper {
+        margin: 190px 0 150px 0;
+    }
+
+    .grid-content {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .top {
+        width: 375px;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+        max-width: 100%;
+    }
+
+    .left {
+        width: 375px;
+        height: auto;
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+    .left button {
+        margin: auto;
+    }
+
+    .right {
+        width: 375px;
+        height: auto;
+        border-radius: 0 0 10px 10px;
+        max-width: 100%;
+    }
+}
